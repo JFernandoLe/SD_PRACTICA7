@@ -39,6 +39,6 @@ def eliminar_producto(id):
     productos = [producto for producto in productos if producto['id'] != id]
     return jsonify({"mensaje": "Producto eliminado"}), 200
 
-# Ejecutar el microservicio
+# Ejecutar el microservicio, corrección de errores
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
